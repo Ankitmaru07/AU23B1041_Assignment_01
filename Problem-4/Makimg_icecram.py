@@ -1,5 +1,9 @@
-def add_topping(scoop_size, *toppings):
-        print(toppings," toppings to ",scoop_size, "scoops of ice cream.")
+import ice_cream
+print("your order id being prepared with ")
 
-def make_shake(type_of_shake):
-    print(type_of_shake," shake is being prepared.")
+scoop_size=input('Enter size: ')
+toopings=input('Enter toopings: ')
+ice_cream.add_topping(scoop_size, toopings)  
+
+type_of_shake=input('Enter shake flavour: ')
+ice_cream.make_shake(type_of_shake)
